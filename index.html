@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritmo – Suporte & Atendimento</title>
+    <style>
+        :root {
+            --bg: #0d0f17;
+            --card-bg: rgba(26, 31, 46, 0.7);
+            --primary: #59d0b6;
+            --purple: #9d7cfb;
+            --text-main: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border: rgba(255, 255, 255, 0.08);
+        }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+        body {
+            background-color: var(--bg);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 24px;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 680px;
+            width: 100%;
+            margin-top: 40px;
+            margin-bottom: 60px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .logo-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 64px;
+            height: 64px;
+            border-radius: 18px;
+            background: linear-gradient(135deg, var(--primary), var(--purple));
+            box-shadow: 0 10px 25px rgba(89, 208, 182, 0.25);
+            margin-bottom: 16px;
+            font-size: 32px;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: -0.02em;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: var(--text-muted);
+            font-size: 1.05rem;
+        }
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--border);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 20px;
+            padding: 24px;
+            margin-bottom: 24px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+        h2 {
+            font-size: 1.25rem;
+            color: var(--primary);
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .faq-item {
+            margin-bottom: 18px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            padding-bottom: 14px;
+        }
+        .faq-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .faq-question {
+            font-weight: 600;
+            color: var(--text-main);
+            margin-bottom: 6px;
+            font-size: 1rem;
+        }
+        .faq-answer {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+        .contact-box {
+            text-align: center;
+            padding: 24px;
+        }
+        .contact-btn {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--primary), var(--purple));
+            color: #0b0f19;
+            font-weight: 700;
+            text-decoration: none;
+            padding: 14px 28px;
+            border-radius: 50px;
+            margin-top: 14px;
+            transition: opacity 0.2s;
+        }
+        .contact-btn:hover {
+            opacity: 0.9;
+        }
+        .footer {
+            text-align: center;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-badge">☀️</div>
+            <h1>Suporte do Ritmo</h1>
+            <p class="subtitle">Estamos aqui para ajudar você a cultivar sua melhor rotina.</p>
+        </div>
+
+        <div class="card">
+            <h2>✉️ Fale Conosco</h2>
+            <p class="faq-answer">Tem alguma dúvida, sugestão de melhoria ou encontrou algum problema no aplicativo? Envie um e-mail diretamente para nossa equipe de atendimento:</p>
+            <div class="contact-box">
+                <p style="font-size: 1.1rem; font-weight: 600; color: var(--primary);">hebert_vinicius@hotmail.com.br</p>
+                <a href="mailto:hebert_vinicius@hotmail.com.br?subject=Suporte%20Ritmo%20App" class="contact-btn">Enviar E-mail de Suporte</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <h2>💡 Perguntas Frequentes (FAQ)</h2>
+            
+            <div class="faq-item">
+                <div class="faq-question">1. Meus dados de saúde e biometria estão seguros?</div>
+                <div class="faq-answer">Sim. O Ritmo prioriza sua privacidade. Os registros de peso, IMC, hidratação e meditação são processados localmente no seu dispositivo e sincronizados pelo seu iCloud pessoal. Nós não coletamos, vendemos nem compartilhamos seus dados com terceiros.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">2. O cálculo de IMC e evolução de peso são gratuitos?</div>
+                <div class="faq-answer">Sim, 100% gratuitos para todos os usuários. Você pode cadastrar sua altura e peso a qualquer momento, visualizar seu gráfico de evolução temporal e consultar a faixa recomendada pela Organização Mundial da Saúde (OMS).</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">3. Como funciona a Live Activity de meditação?</div>
+                <div class="faq-answer">Ao iniciar uma sessão de meditação, uma Live Activity aparece automaticamente na sua Tela Bloqueada e na Ilha Dinâmica (Dynamic Island), mostrando o tempo restante mesmo com a tela apagada ou ao alternar entre outros apps.</div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">4. Como restaurar minha assinatura Ritmo Pro?</div>
+                <div class="faq-answer">Basta abrir o aplicativo, acessar a aba <strong>Ajustes</strong> e tocar em <strong>Restaurar Compras</strong>. O Apple ID vinculado identificará automaticamente suas compras anteriores.</div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>© 2026 Ritmo. Desenvolvido com foco em privacidade e bem-estar.</p>
+        </div>
+    </div>
+</body>
+</html>
